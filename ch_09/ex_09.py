@@ -1,6 +1,4 @@
-name = input("Enter file:")
-if len(name) < 1:
-    name = "mbox-short.txt"
+name = input("Enter file: ")
 handle = open(name)
 
 # extract all emails and store in a list
