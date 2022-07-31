@@ -1,4 +1,4 @@
-def sort_remove_duplicates(file):
+def new(file):
     fh = open(file)
     lst = []
     for line in fh:
@@ -20,4 +20,4 @@ def sort_remove_duplicates(file):
 
     return output
 
-print(sort_remove_duplicates('romeo.txt'))
+print(new('romeo.txt'))
