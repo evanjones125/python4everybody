@@ -8,7 +8,7 @@ def common_word(file):
     string = " ".join(flattened_store)
 
     # remove punctuation from text
-    punc = ''',.'"!'''
+    punc = ''',."!'''
     for letter in string:
         if letter in punc:
             string = string.replace(letter, "")
