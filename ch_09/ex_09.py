@@ -1,7 +1,7 @@
 name = input("Enter file: ")
 handle = open(name)
 
-# extract all emails and store in a list
+# extract all emails and store in a lis
 store = []
 for line in handle:
     if line.startswith('From '):
