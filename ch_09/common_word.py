@@ -29,4 +29,4 @@ def common_word(file):
 
     return "the word that appears most often is {highest}; it appears {count} times".format(highest = highest, count = count)
 
-print(common_word('lorem.txt'))
+print(common_word('alien_superstar.txt'))
