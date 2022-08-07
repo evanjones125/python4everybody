@@ -11,10 +11,7 @@ def hours(file):
 
     # populate store dictionary with hours values and their frequencies
     for hour in hours:
-        if hour in store:
-            store[hour] += 1
-        else:
-            store[hour] = 1
+        store[hour] = store.get(hour, 0) + 1
 
     # sort store and print each property as a tuple
     for k, v in sorted(store.items()):
