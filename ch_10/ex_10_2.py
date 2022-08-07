@@ -17,7 +17,7 @@ def hours(file):
             store[hour] = 1
 
     # sort store and print each property as a tuple
-    for i in sorted(store):
-        print(i, store[i])
+    for k, v in sorted(store.items()):
+        print(k, v)
 
 print(hours('mbox-short.txt'))
