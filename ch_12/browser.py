@@ -5,9 +5,9 @@ url = input('Enter: ')
 html = urllib.request.urlopen(url).read()
 soup = BeautifulSoup(html, 'html.parser')
 
-tags = soup('a')
+tags = soup('span')
 for tag in tags:
-    print(tag.get('href', None))
+    print(tag.get('comments', None))
 
 # counts = {}
 # for line in fhand:
