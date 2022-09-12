@@ -9,12 +9,10 @@ data = uh.read()
 tree = ET.fromstring(data)
 counts = tree.findall('.//count')
 
-for count in counts:
-    total += int(count.text)
+# for count in counts:
+#     total += int(count.text)
 
-# for child in tree[1]:
-#     nums.append(int(child[1].text))
-# for num in nums:
-#     total += num
+for child in tree[1]:
+    total += int(child[1].text)
 
 print(total)
